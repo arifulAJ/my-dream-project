@@ -51,11 +51,13 @@ const useFirebase=()=>{
       });
      }
      const signOutPlace=()=>{
+       setIsLoading(true)
       signOut(auth).then(() => {
         // Sign-out successful.
       }).catch((error) => {
         // An error happened.
-      });
+      })
+      .finally(()=>setIsLoading(false));
      }
 return {
 user,

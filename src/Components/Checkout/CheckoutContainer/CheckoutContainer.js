@@ -43,7 +43,7 @@ const CheckoutContainer = () => {
   console.log(fieldData);
   return (
     <>
-      <HeaderContainer />
+    
       <Container maxWidth="xl">
         <Paper elevation={4} sx={{ display: "flex", py: 3, my: 3 }}>
           <Typography variant="h5" sx={{ ml: 3 }}>
